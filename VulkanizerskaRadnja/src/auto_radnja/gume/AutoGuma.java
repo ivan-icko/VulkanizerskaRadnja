@@ -86,7 +86,7 @@ public class AutoGuma {
 	/**
 	 * Postavlja novu vrednost za atrubut precnik
 	 * @param precnik nov precnik gume
-	 * @throws java.lang.IllegalArgumentException ako je precnik manji od 13 i ako je precnik veci od 22
+	 * @throws java.lang.IllegalArgumentException ako je precnik manji od 13 ili ako je precnik veci od 22
 	 */
 	public void setPrecnik(int precnik) {
 		if (precnik < 13 || precnik > 22)
@@ -106,10 +106,10 @@ public class AutoGuma {
 	/**
 	 * Postavlja novu vrednost za atribut sirina
 	 * @param sirina gume
-	 * @throws java.lang.IllegalArgumentException ako je sirina manja od 135 i veca od 355
+	 * @throws java.lang.IllegalArgumentException ako je sirina manja od 135 ili veca od 355
 	 */
 	public void setSirina(int sirina) {
-		if (sirina < 135 && sirina > 355)
+		if (sirina < 135 || sirina > 355)
 			throw new IllegalArgumentException("Sirina van opsega");
 		this.sirina = sirina;
 	}
