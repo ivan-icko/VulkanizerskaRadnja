@@ -2,7 +2,7 @@ package auto_radnja.gume;
 
 
 /**
- * 
+ * Klasa AutoGuma
  * @author ivan-icko
  * @version 1.0
  *

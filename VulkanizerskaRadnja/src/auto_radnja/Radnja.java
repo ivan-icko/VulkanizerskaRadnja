@@ -5,7 +5,8 @@ import auto_radnja.gume.AutoGuma;
 
 
 /**
- * 
+ * Interfejs Radnja
+ * Sadrzi metode dodajGumu(), pronadjiGumu() i vratiSveGume()
  * @author Ivan
  * @version 1.0
  *

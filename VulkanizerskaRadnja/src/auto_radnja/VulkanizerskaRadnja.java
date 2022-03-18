@@ -4,7 +4,20 @@ import java.util.List;
 import java.util.LinkedList;
 import auto_radnja.gume.AutoGuma;
 
+
+/**
+ * Klasa VulkanizerskaRadnja
+ * Sadrzi listu Auto guma
+ * @author Ivan
+ * @version 1.0
+ */
 public class VulkanizerskaRadnja implements Radnja {
+	
+	/**
+	 * Lista AutoGuma.
+	 * Lista je privatna
+	 * Implementirana kao LinkedList<AutoGuma>
+	 */
 	private List<AutoGuma> gume = new LinkedList<AutoGuma>();
 
 	@Override
