@@ -90,7 +90,7 @@ public class AutoGuma {
 	 */
 	public void setPrecnik(int precnik) {
 		if (precnik < 13 || precnik > 22)
-			throw new IllegalArgumentException("Precnik van opsega");
+			throw new IllegalArgumentException("Precnik izvan opsega");
 		this.precnik = precnik;
 	}
 
