@@ -4,31 +4,55 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 class AutoGumaTest {
 
+	AutoGuma ag;
 	@BeforeEach
 	void setUp() throws Exception {
+		ag=new AutoGuma();
 	}
 
 	@AfterEach
 	void tearDown() throws Exception {
+		ag=null;
 	}
 
+	
+	
+	
 	@Test
 	void testAutoGuma() {
-		fail("Not yet implemented");
+		assertEquals(null, ag.getMarkaModel());
+		assertEquals(ag.getPrecnik(), -1);
+		assertEquals(ag.getSirina(),-1);
+		assertEquals(ag.getVisina(), -1);
 	}
 
 	@Test
+	@DisplayName("testiranje konstruktora sa tri parametra")
 	void testAutoGumaStringIntIntInt() {
-		fail("Not yet implemented");
+		
 	}
 
 	@Test
 	void testSetMarkaModel() {
-		fail("Not yet implemented");
+		ag.setMarkaModel("Model1");
+		assertEquals("Model1", ag.getMarkaModel());
+	}
+	
+	@Test
+	void testSetMarkaModelJeNull() {
+		assertThrows(java.lang.NullPointerException.class,()->ag.setMarkaModel(null));
+	}
+	
+	@Test
+	void testSetMarkaModelDuzinaManjaOd3() {
+		assertThrows(java.lang.IllegalArgumentException.class, ()->ag.setMarkaModel("Mo"));
+		
+		
 	}
 
 	@Test
