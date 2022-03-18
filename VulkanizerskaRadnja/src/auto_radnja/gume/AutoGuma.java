@@ -95,8 +95,9 @@ public class AutoGuma {
 	}
 
 	/**
+	 * 
 	 * Vraca sirinu gume
-	 * @return sirina gume kao int
+	 * @return sirina gume kao integer
 	 */
 	public int getSirina() {
 		return sirina;
