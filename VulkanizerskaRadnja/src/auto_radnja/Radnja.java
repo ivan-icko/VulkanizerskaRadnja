@@ -21,8 +21,10 @@ public interface Radnja {
 
 	
 	/**
-	 * Pretrazuje AutoGume preme markaModelui vraca listu objekata klase AutoGuma
+	 * Pretrazuje AutoGume prema markaModelui vraca listu objekata klase AutoGuma
 	 * @param markaModel
+	 * @throws java.lang.NullPointerException ako je uneta knjiga null
+	 * @throws java.lang.RuntimeException ako guma vec postoji
 	 * @return List<AutoGuma> lista
 	 */
 	List<AutoGuma> pronadjiGumu(String markaModel);
