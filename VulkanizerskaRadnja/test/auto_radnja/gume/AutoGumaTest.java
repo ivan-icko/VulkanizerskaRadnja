@@ -22,7 +22,6 @@ class AutoGumaTest {
 
 	
 	
-	
 	@Test
 	void testAutoGuma() {
 		assertEquals(null, ag.getMarkaModel());
@@ -32,9 +31,14 @@ class AutoGumaTest {
 	}
 
 	@Test
-	@DisplayName("testiranje konstruktora sa tri parametra")
+	@DisplayName("testiranje konstruktora sa cetiri parametra")
 	void testAutoGumaStringIntIntInt() {
+		ag=new AutoGuma("Marka",13,20,30);
 		
+		assertEquals("Marka", ag.getMarkaModel());
+		assertEquals(ag.getPrecnik(),10);
+		assertEquals(ag.getSirina(),20);
+		assertEquals(ag.getVisina(), 30);
 	}
 
 	@Test
@@ -51,14 +55,19 @@ class AutoGumaTest {
 	@Test
 	void testSetMarkaModelDuzinaManjaOd3() {
 		assertThrows(java.lang.IllegalArgumentException.class, ()->ag.setMarkaModel("Mo"));
-		
-		
 	}
 
 	@Test
 	void testSetPrecnik() {
-		fail("Not yet implemented");
+		ag.setPrecnik(21);
+		assertEquals(21, ag.getPrecnik());
 	}
+	
+	@Test
+	void testSetPrecnikVanOpsegaSaGreskom() {
+		assertThrows(java.lang.IllegalArgumentException.class,()->ag.setPrecnik(290000));
+	}
+	
 
 	@Test
 	void testSetSirina() {
