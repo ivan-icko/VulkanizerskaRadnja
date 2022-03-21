@@ -3,6 +3,7 @@ package auto_radnja.gume;
 
 /**
  * Klasa AutoGuma
+ * Sadrzi privatne atribute koji specificiraju osnovne parametre AutoGume (markaModel, precnik, visina, sirina). Takodje sadrizi i parametarski konstruktor koji postavlja ove privatne atribute na odgovarajuce vrednosti.
  * @author ivan-icko
  * @version 1.0
  *

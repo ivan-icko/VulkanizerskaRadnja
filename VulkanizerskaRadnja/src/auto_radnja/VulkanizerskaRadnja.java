@@ -7,7 +7,7 @@ import auto_radnja.gume.AutoGuma;
 
 /**
  * Klasa VulkanizerskaRadnja
- * Sadrzi listu Auto guma
+ * Sadrzi listu Auto guma i omogucava korisniku dodavanje, prnalazenje i vracanje svih AutoGuma.
  * @author Ivan
  * @version 1.0
  */
@@ -16,7 +16,7 @@ public class VulkanizerskaRadnja implements Radnja {
 	/**
 	 * Lista AutoGuma.
 	 * Lista je privatna
-	 * Implementirana kao LinkedList<AutoGuma>
+	 * Implementirana kao LinkedListu AutoGuma
 	 */
 	private List<AutoGuma> gume = new LinkedList<AutoGuma>();
 
